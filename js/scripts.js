@@ -1,3 +1,7 @@
+/* jslint browser:true */
+/* jslint node:true */
+/* global $, Modernizr */
+
 // DOM Ready
 $(function() {
 
@@ -11,5 +15,14 @@ $(function() {
 			}
 		}
 	}
-
+    // code starts here.
+    var application = false;
+    if (require){
+        application = true;
+    }else{
+        return false;
+    }
+    
+    //display titlebar
+    //bind parts.
 });
